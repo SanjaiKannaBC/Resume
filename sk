@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjai Kanna Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .contact-info {
+            color: #666;
+            font-size: 14px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .job {
+            margin-bottom: 20px;
+        }
+        .job h3 {
+            color: #444;
+            margin-bottom: 5px;
+        }
+        .job .company {
+            color: #666;
+            font-style: italic;
+        }
+        .job .date {
+            color: #888;
+            font-size: 14px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill {
+            background-color: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Sanjai Kanna B C</h1>
+            <div class="contact-info">
+                <p>📧 sanjaikannabc26@gmail.com | 📱 (+91 8072417190)</p>
+                <p>📍 Chennai, Tamil Nadu, India</p>
+                <p>🔗 linkedin.com/in/sanjaikannabc</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Professional Summary</h2>
+            <p>Dedicated individual with skills in accounting, programming, and data analysis, eager to apply and 
+                expand them through real-world problem-solving and innovation.</p>
+        </div>
+
+        <div class="section">
+            <h2>Intenship</h2>
+            <div class="job">
+                <h3>Data Analyst</h3>
+                <div class="company">Antontech Pvt Ltd</div>
+                <div class="date">May 2024</div>
+                <ul>
+                    <li>Developed stock and sports analysis reports using Power BI</li>
+                    <li>Managed invoice data to streamline business processes</li>
+                    <li>Gained hands-on experience in data visualization and business analytics</li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <h3>Bachelor of Commerce in Computer Application(Ongoing)</h3>
+            <div class="company">Loyola College</div>
+            <div class="date">Graduation: May 2026</div>
+        </div>
+        
+
+        <div class="section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span class="skill">JavaScript</span>
+                <span class="skill">Power BI</span>
+                <span class="skill">Tally</span>
+                <span class="skill">Financial Accounting</span>
+                <span class="skill">Corporate Accounting</span>
+                <span class="skill">Python</span>
+                <span class="skill">HTML/CSS</span>
+               
+                <span class="skill">MongoDB</span>
+                
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Certifications</h2>
+            <ul>
+                <li>SQL Fundamentals</li>
+                
+                <li>Computer Hardware Basics  </li>
+                <li>Tableau for beginners </li>                          
+            </ul>
+        </div>
+
+    <div class="section">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Banking Application (Python)</h3>
+            <ul>
+                <li>Designed a basic banking system to handle user accounts, transaction processing, and loan tracking</li>
+                <li>Features included account creation, deposit/withdrawal operations, and loan status management</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>Time Series Forecasting using ARIMA (Multivariate Analysis)</h3>
+            <ul>
+                <li>Forecasted asset prices using ARIMA after cleaning and ADF stationarity testing</li>
+                <li>Chose ARIMA (2,0,1) using ACF/PACF, built differenced models</li>
+                <li>Improved accuracy by addressing non-stationarity; evaluated with AIC, BIC, RMSE</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>Sentiment Analysis (Text Mining)</h3>
+            <ul>
+                <li>Conducted sentiment analysis on text data using NLP and lexicon-based methods</li>
+                <li>Applied preprocessing steps like tokenization, stopword removal, and stemming</li>
+                <li>Classified text into positive, negative, and neutral sentiments using rule-based scoring</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
