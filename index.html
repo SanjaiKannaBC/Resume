@@ -1,175 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanjai Kanna Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .header {
-            text-align: center;
-            border-bottom: 2px solid #333;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-        .header h1 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-        .contact-info {
-            color: #666;
-            font-size: 14px;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .section h2 {
-            color: #333;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
-        }
-        .job {
-            margin-bottom: 20px;
-        }
-        .job h3 {
-            color: #444;
-            margin-bottom: 5px;
-        }
-        .job .company {
-            color: #666;
-            font-style: italic;
-        }
-        .job .date {
-            color: #888;
-            font-size: 14px;
-        }
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .skill {
-            background-color: #f0f0f0;
-            padding: 5px 10px;
-            border-radius: 15px;
-            font-size: 14px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanjai Kanna Resume</title>
+  <style>
+    /* General Page Styling */
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #eef2f3, #dfe9f3);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      animation: fadeIn 1.2s ease;
+    }
+
+    /* Header Section */
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #2c3e50;
+    }
+    .contact-info {
+      font-size: 15px;
+      color: #555;
+      margin-top: 8px;
+    }
+    .contact-info a {
+      color: #0073b1;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* Section Titles */
+    .section {
+      margin-bottom: 40px;
+    }
+    .section h2 {
+      font-size: 1.6rem;
+      border-left: 5px solid #0073b1;
+      padding-left: 10px;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    /* Jobs / Projects Styling */
+    .job, .project {
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 8px;
+      background: #f9f9f9;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .job:hover, .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+    .job h3, .project h3 {
+      margin: 0;
+      color: #34495e;
+    }
+    .company {
+      font-style: italic;
+      color: #666;
+      margin: 5px 0;
+    }
+    .date {
+      font-size: 14px;
+      color: #888;
+    }
+    ul {
+      margin: 8px 0 0 18px;
+    }
+
+    /* Skills Chips */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .skill {
+      background: #0073b1;
+      color: #fff;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 14px;
+      transition: background 0.3s ease;
+    }
+    .skill:hover {
+      background: #005580;
+    }
+    .certifications a {
+    color: inherit;       /* Takes the color of parent (black/gray) */
+    text-decoration: none; /* Removes underline */
+    font-weight: normal;   /* Keeps the same weight as other items */
+    }
+    .certifications a:hover {
+    text-decoration: underline; /* Optional hover effect */
+    color: #0073b1; /* Or keep inherit if you don’t want color change */
+    }
+
+    /* Fade-in Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Sanjai Kanna B C</h1>
-            <div class="contact-info">
-                <p>📧 sanjaikannabc26@gmail.com | 📱 (+91 8072417190)</p>
-                <p>📍 Chennai, Tamil Nadu, India</p>
-                <p>🔗 linkedin.com/in/sanjaikannabc</p>
-            </div>
-        </div>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1>Sanjai Kanna B C</h1>
+      <div class="contact-info">
+        📧 <a href="mailto:sanjaikannabc26@gmail.com">sanjaikannabc26@gmail.com</a> |
+        📱 +91 8072417190 <br>
+        📍 Chennai, Tamil Nadu, India <br>
+        🔗 <a href="https://linkedin.com/in/sanjaikannabc" target="_blank">LinkedIn</a> |
+        🎓 <a href="https://ds.study.iitm.ac.in/student/24F2006569" target="_blank">IITM Profile</a>
+      </div>
+    </div>
 
-        <div class="section">
-            <h2>Professional Summary</h2>
-            <p>Dedicated individual with skills in accounting, programming, and data analysis, eager to apply and 
-                expand them through real-world problem-solving and innovation.</p>
-        </div>
-
-        <div class="section">
-            <h2>Intenship</h2>
-            <div class="job">
-                <h3>Data Analyst</h3>
-                <div class="company">Antontech Pvt Ltd</div>
-                <div class="date">May 2024</div>
-                <ul>
-                    <li>Developed stock and sports analysis reports using Power BI</li>
-                    <li>Managed invoice data to streamline business processes</li>
-                    <li>Gained hands-on experience in data visualization and business analytics</li>
-                </ul>
-            </div>
-            
-        </div>
-
-        
-
-        <div class="section">
-        <h2>Education</h2>
-        
-        <h3>Bachelor of Science in Data Science and Programming (Ongoing)</h3>
-        <div class="company">Indian Institute of Technology, Madras (Online Degree)</div>
-        <div class="date">Expected Graduation: 2028</div>
-        
-        <br>
-        
-        <h3>Bachelor of Commerce in Computer Application (Ongoing)</h3>
-        <div class="company">Loyola College</div>
-        <div class="date">Expected Graduation: May 2026</div>
-        </div>
-
-        <div class="section">
-            <h2>Skills</h2>
-            <div class="skills">
-                <span class="skill">JavaScript</span>
-                <span class="skill">Power BI</span>
-                <span class="skill">Tally</span>
-                <span class="skill">Financial Accounting</span>
-                <span class="skill">Corporate Accounting</span>
-                <span class="skill">Python</span>
-                <span class="skill">HTML/CSS</span>
-               
-                <span class="skill">SQL</span>
-                
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>Certifications</h2>
-            <ul>
-                <li>SQL Fundamentals</li>
-                
-                <li>Computer Hardware Basics  </li>
-                <li>Tableau for beginners </li>                          
-            </ul>
-        </div>
-
+    <!-- Profile -->
     <div class="section">
-        <h2>Projects</h2>
+      <h2>Professional Summary</h2>
+      <p>Adaptable graduate with expertise in accounting, finance, and data analysis, 
+         complemented by strong programming skills. Experienced in financial reporting, dashboards, 
+         and forecasting models. Completed <strong>IITM BS Foundation Certificate</strong>, 
+         eager to apply both business and technology skills in delivering innovative solutions.</p>
+    </div>
+
+    <!-- Internship -->
+    <div class="section">
+      <h2>Internship Experience</h2>
+      <div class="job">
+        <h3>Equity Research & Operations Intern</h3>
+        <div class="company">Absolute Broking Pvt Ltd</div>
+        <div class="date">May 2025</div>
+        <ul>
+          <li>Conducted financial analysis using company annual reports and key ratios</li>
+          <li>Supported KYC verification and account opening for clients</li>
+          <li>Created finance-themed content to improve customer engagement</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Data Analyst Intern</h3>
+        <div class="company">Antontech Pvt Ltd</div>
+        <div class="date">May 2024</div>
+        <ul>
+          <li>Designed interactive Power BI dashboards for stock and sports data analysis</li>
+          <li>Processed and verified 25+ vendor invoices in compliance with accounting standards</li>
+          <li>Coordinated with finance and operations teams for aligned data reporting</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+      <h2>Education</h2>
+      <div class="job">
+        <h3>B. Com in Computer Applications</h3>
+        <div class="company">Loyola College, Chennai | CGPA: 9.04</div>
+        <div class="date">Graduating May 2026</div>
+      </div>
+      <div class="job">
+        <h3>BS in Data Science and Applications</h3>
+        <div class="company">Indian Institute of Technology, Madras (Online Degree)</div>
+        <div class="date">Expected 2028</div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span class="skill">Python</span>
+        <span class="skill">SQL</span>
+        <span class="skill">Power BI</span>
+        <span class="skill">Tableau</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">HTML/CSS</span>
+        <span class="skill">Financial Accounting</span>
+        <span class="skill">Corporate Accounting</span>
+        <span class="skill">Tally ERP</span>
+        <span class="skill">Advanced Excel</span>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="section">
+      <h2>Projects</h2>
+    
         <div class="project">
-            <h3>Banking Application (Python)</h3>
-            <ul>
-                <li>Designed a basic banking system to handle user accounts, transaction processing, and loan tracking</li>
-                <li>Features included account creation, deposit/withdrawal operations, and loan status management</li>
-            </ul>
+        <h3>Process Risk & Reporting Dashboard</h3>
+        <ul>
+            <li>Built an interactive dashboard using <strong>Python, Excel, and Power BI</strong> to track financial and operational data</li>
+            <li>Automated ratio calculations and variance checks to identify unusual patterns</li>
+            <li>Enhanced visibility into processes and supported <strong>risk-based decision-making</strong></li>
+        </ul>
         </div>
+    
         <div class="project">
-            <h3>Time Series Forecasting using ARIMA (Multivariate Analysis)</h3>
-            <ul>
-                <li>Forecasted asset prices using ARIMA after cleaning and ADF stationarity testing</li>
-                <li>Chose ARIMA (2,0,1) using ACF/PACF, built differenced models</li>
-                <li>Improved accuracy by addressing non-stationarity; evaluated with AIC, BIC, RMSE</li>
-            </ul>
+        <h3>Sentiment Analysis (Text Mining)</h3>
+        <ul>
+            <li>Applied <strong>NLP preprocessing</strong> (tokenization, stopword removal, stemming) and lexicon-based methods</li>
+            <li>Classified text into <strong>positive, negative, and neutral</strong> sentiments</li>
+            <li>Extracted valuable insights from unstructured data to support <strong>business decision-making</strong></li>
+        </ul>
         </div>
+    
         <div class="project">
-            <h3>Sentiment Analysis (Text Mining)</h3>
-            <ul>
-                <li>Conducted sentiment analysis on text data using NLP and lexicon-based methods</li>
-                <li>Applied preprocessing steps like tokenization, stopword removal, and stemming</li>
-                <li>Classified text into positive, negative, and neutral sentiments using rule-based scoring</li>
-            </ul>
+        <h3>Time Series Forecasting with ARIMA</h3>
+        <ul>
+            <li>Forecasted asset prices using <strong>ARIMA models</strong> after ADF stationarity testing and differencing</li>
+            <li>Selected best-fit model (<strong>ARIMA (2,0,1)</strong>) using ACF/PACF plots and evaluated with <strong>AIC, BIC, RMSE</strong></li>
+            <li>Demonstrated expertise in <strong>predictive analytics</strong> and statistical modeling</li>
+        </ul>
         </div>
     </div>
+
+    <!-- Certifications -->
+    <div class="section">
+      <h2>Certifications</h2>
+      <ul>
+        <li class="certifications"><a href="https://drive.google.com/file/d/1JOfqOyUYLjGj3gAl2ByIO3NgMKFLikgj/view?usp=drive_link" >IITM BS Foundation Certificate</a></li>
+        <li>SQL Fundamentals</li>
+        <li>Tableau for Beginners</li>
+        <li>Computer Hardware Basics</li>
+      </ul>
     </div>
+  </div>
 </body>
 </html>
