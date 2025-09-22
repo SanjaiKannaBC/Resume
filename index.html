@@ -125,6 +125,16 @@
     text-decoration: underline; /* Optional hover effect */
     color: #d1ab43; /* Or keep inherit if you don’t want color change */
     }
+    .comp a {
+    color: inherit;       /* Takes the color of parent (black/gray) */
+    text-decoration: none; /* Removes underline */
+    font-weight: normal;   /* Keeps the same weight as other items */
+    }
+    .comp a:hover {
+    ; /* Optional hover effect */
+    color: #5d666b; 
+    }
+      
     /* Fade-in Animation */
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
@@ -160,7 +170,7 @@
       <h2>Internship Experience</h2>
       <div class="job">
         <h3>Equity Research & Operations Intern</h3>
-        <div class="company"><a href="https://www.absolutebroking.com/" class='certifications'>Absolute Broking Pvt Ltd</a></div>
+        <div class="comp"><a href="https://www.absolutebroking.com/" class='company'>Absolute Broking Pvt Ltd</a></div>
         <div class="date">May 2025</div>
         <ul>
           <li>Conducted financial analysis using company annual reports and key ratios</li>
@@ -170,7 +180,7 @@
       </div>
       <div class="job">
         <h3>Data Analyst Intern</h3>
-        <div class="certifications"><a href='https://www.antontech.in/' class='company'>Antontech Pvt Ltd</a></div>
+        <div class="comp"><a href='https://www.antontech.in/' class='company'>Antontech Pvt Ltd</a></div>
         <div class="date">May 2024</div>
         <ul>
           <li>Designed interactive Power BI dashboards for stock and sports data analysis</li>
@@ -257,6 +267,7 @@
   </div>
 </body>
 </html>
+
 
 
 
