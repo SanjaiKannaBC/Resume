@@ -1,283 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sanjai Kanna Resume</title>
-  <style>
-    /* General Page Styling */
-    body {
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to right, #eef2f3, #dfe9f3);
-      color: #333;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      background: #fff;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-      animation: fadeIn 1.2s ease;
-    }
-
-    /* Header Section */
-    .header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      color: #2c3e50;
-    }
-    .contact-info {
-      font-size: 15px;
-      color: #555;
-      margin-top: 8px;
-    }
-    .contact-info a {
-      color: #0073b1;
-      text-decoration: none;
-    }
-    .contact-info a:hover {
-      text-decoration: underline;
-    }
-
-    /* Section Titles */
-    .section {
-      margin-bottom: 40px;
-    }
-    .section h2 {
-      font-size: 1.6rem;
-      border-left: 5px solid #0073b1;
-      padding-left: 10px;
-      margin-bottom: 20px;
-      color: #2c3e50;
-    }
-
-    /* Jobs / Projects Styling */
-    .job, .project {
-      margin-bottom: 20px;
-      padding: 15px;
-      border-radius: 8px;
-      background: #f9f9f9;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .job:hover, .project:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    }
-    .job h3, .project h3 {
-      margin: 0;
-      color: #34495e;
-    }
-    .company {
-      font-style: italic;
-      color: #666;
-      margin: 5px 0;
-    }
-    
-    .date {
-      font-size: 14px;
-      color: #888;
-    }
-    ul {
-      margin: 8px 0 0 18px;
-    }
-
-    /* Skills Chips */
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .skill {
-      background: #0073b1;
-      color: #fff;
-      padding: 8px 14px;
-      border-radius: 20px;
-      font-size: 14px;
-      transition: background 0.3s ease;
-    }
-    .skill:hover {
-      background: #005580;
-    }
-    .certifications a {
-    color: inherit;       /* Takes the color of parent (black/gray) */
-    text-decoration: none; /* Removes underline */
-    font-weight: normal;   /* Keeps the same weight as other items */
-    }
-    .certifications a:hover {
-    text-decoration: underline; /* Optional hover effect */
-    color: #0073b1; /* Or keep inherit if you don’t want color change */
-    transition: transform 0.1s ease
-    }
-    .iitweb a {
-    color: inherit;       /* Takes the color of parent (black/gray) */
-    text-decoration: none; /* Removes underline */
-    font-weight: normal;   /* Keeps the same weight as other items */
-    }
-    .iitweb a:hover {
-    text-decoration: none; /* Optional hover effect */
-    color: #d1ab43; /* Or keep inherit if you don’t want color change */
-    }
-    .comp a {
-    color: inherit;       /* Takes the color of parent (black/gray) */
-    text-decoration: none; /* Removes underline */
-    font-weight: normal;   /* Keeps the same weight as other items */
-    }
-    .comp a:hover {
-    ; /* Optional hover effect */
-    color: #6da0bd; 
-    }
-      
-    /* Fade-in Animation */
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjai Kanna B C | Professional Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for Inter font and improved color theme (Deep Dark Mode) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        // Dark Theme: Deep Navy/Black background with light text and a light blue accent
+                        'primary': '#f8f8f8',      // Light text for main content and headings
+                        'secondary': '#60a5fa',    // Light Blue Accent for links and highlights
+                        'background': '#0a192f',   // Deep Navy/Black main background
+                        'section_bg': '#0a192f',   // Same deep navy for all containers for seamless dark look
+                        'dark_surface': '#1f2937',  // A slightly lighter dark surface for card backgrounds
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .section-heading {
+            /* Clean solid line in light blue accent color */
+            border-bottom: 2px solid #60a5fa; 
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        /* Style for the borders used in education/experience */
+        .dark-border-accent {
+            border-left: 4px solid #60a5fa;
+        }
+    </style>
 </head>
-<body>
-  <div class="container">
-    <!-- Header -->
-    <div class="header">
-      <h1>Sanjai Kanna B C</h1>
-      <div class="contact-info">
-        📧 <a href="mailto:sanjaikannabc26@gmail.com">sanjaikannabc26@gmail.com</a> |
-        📱 +91 8072417190 <br>
-        📍 Chennai, Tamil Nadu, India <br>
-        🔗 <a href="https://linkedin.com/in/sanjaikannabc" target="_blank">LinkedIn</a> |
-        🎓 <a href="https://ds.study.iitm.ac.in/student/24F2006569" target="_blank">IITM Profile</a>
-      </div>
-    </div>
+<body class="bg-background font-sans text-primary">
 
-    <!-- Profile -->
-    <div class="section">
-      <h2>Professional Summary</h2>
-      <p>Adaptable graduate with expertise in accounting, finance, and data analysis, 
-         complemented by strong programming skills. Experienced in financial reporting, dashboards, 
-         and forecasting models. Completed <strong>IITM BS Foundation Certificate</strong>, 
-         eager to apply both business and technology skills in delivering innovative solutions.</p>
-    </div>
-
-    <!-- Internship -->
-    <div class="section">
-      <h2>Internship Experience</h2>
-      <div class="job">
-        <h3>Equity Research & Operations Intern</h3>
-        <div class="comp"><a href="https://www.absolutebroking.com/" class='company'>Absolute Broking Pvt Ltd</a></div>
-        <div class="date">May 2025</div>
-        <ul>
-          <li>Conducted financial analysis using company annual reports and key ratios</li>
-          <li>Supported KYC verification and account opening for clients</li>
-          <li>Created finance-themed content to improve customer engagement</li>
-        </ul>
-      </div>
-      <div class="job">
-        <h3>Data Analyst Intern</h3>
-        <div class="comp"><a href='https://www.antontech.in/' class='company'>Antontech Pvt Ltd</a></div>
-        <div class="date">May 2024</div>
-        <ul>
-          <li>Designed interactive Power BI dashboards for stock and sports data analysis</li>
-          <li>Processed and verified 25+ vendor invoices in compliance with accounting standards</li>
-          <li>Coordinated with finance and operations teams for aligned data reporting</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Education -->
-    <div class="section">
-      <h2>Education</h2>
-      <div class="job">
-        <h3>B. Com in Computer Applications</h3>
-        <div class="company">Loyola College, Chennai | CGPA: 9.04</div>
-        <div class="date">Graduating May 2026</div>
-      </div>
-      <div class="job">
-        <h3 class="iitweb"><a href="https://ds.study.iitm.ac.in/student/24F2006569" ><b>BS in Data Science and Applications</b></a></h3>
-        <div class="company">Indian Institute of Technology, Madras (Online Degree)</div>
-        <div class="date">Expected 2028</div>
-      </div>
-    </div>
-
-    <!-- Skills -->
-    <div class="section">
-      <h2>Skills</h2>
-      <div class="skills">
-        <span class="skill">Python</span>
-        <span class="skill">SQL</span>
-        <span class="skill">Power BI</span>
-        <span class="skill">Tableau</span>
-        <span class="skill">JavaScript</span>
-        <span class="skill">HTML/CSS</span>
-        <span class="skill">Financial Accounting</span>
-        <span class="skill">Corporate Accounting</span>
-        <span class="skill">Tally ERP</span>
-        <span class="skill">Advanced Excel</span>
-      </div>
-    </div>
-
-    <!-- Projects -->
-    <div class="section">
-      <h2>Projects</h2>
-    
-        <div class="project">
-        <h3>Process Risk & Reporting Dashboard</h3>
-        <ul>
-            <li>Built an interactive dashboard using <strong>Python, Excel, and Power BI</strong> to track financial and operational data</li>
-            <li>Automated ratio calculations and variance checks to identify unusual patterns</li>
-            <li>Enhanced visibility into processes and supported <strong>risk-based decision-making</strong></li>
-        </ul>
+    <!-- Header & Navigation -->
+    <header class="bg-dark_surface shadow-xl sticky top-0 z-10 border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex justify-center sm:justify-between items-center">
+            <h1 class="text-3xl font-extrabold text-primary tracking-wider hidden sm:block">SANJAI KANNA B C</h1>
+            <nav class="space-x-4 sm:space-x-6">
+                <!-- Links now use secondary color on hover -->
+                <a href="#about" class="text-gray-400 hover:text-secondary font-medium transition duration-300 text-sm sm:text-base">ABOUT</a>
+                <a href="#projects" class="text-gray-400 hover:text-secondary font-medium transition duration-300 text-sm sm:text-base">PROJECTS</a>
+                <a href="#certifications" class="text-gray-400 hover:text-secondary font-medium transition duration-300 text-sm sm:text-base">CERTIFICATIONS</a>
+                <a href="#contact" class="text-gray-400 hover:text-secondary font-medium transition duration-300 text-sm sm:text-base">CONTACT</a>
+            </nav>
         </div>
-    
-        <div class="project">
-        <h3>Sentiment Analysis (Text Mining)</h3>
-        <ul>
-            <li>Applied <strong>NLP preprocessing</strong> (tokenization, stopword removal, stemming) and lexicon-based methods</li>
-            <li>Classified text into <strong>positive, negative, and neutral</strong> sentiments</li>
-            <li>Extracted valuable insights from unstructured data to support <strong>business decision-making</strong></li>
-        </ul>
-        </div>
-    
-        <div class="project">
-        <h3>Time Series Forecasting with ARIMA</h3>
-        <ul>
-            <li>Forecasted asset prices using <strong>ARIMA models</strong> after ADF stationarity testing and differencing</li>
-            <li>Selected best-fit model (<strong>ARIMA (2,0,1)</strong>) using ACF/PACF plots and evaluated with <strong>AIC, BIC, RMSE</strong></li>
-            <li>Demonstrated expertise in <strong>predictive analytics</strong> and statistical modeling</li>
-        </ul>
-        </div>
-    </div>
+    </header>
 
-    <!-- Certifications -->
-    <div class="section">
-      <h2>Certifications</h2>
-      <ul>
-        <li class="certifications"><a href="https://drive.google.com/file/d/1JOfqOyUYLjGj3gAl2ByIO3NgMKFLikgj/view?usp=drive_link" >IITM BS Foundation Certificate</a></li>
-        <li class="certifications"><a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/a3ddca68cc1c838e7099db88507b23c2fb64a9d8" >SQL Fundamentals</a></li>
-        <li class="certifications"><a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/081b7a9350f18cebfe2ec075b7d52602a2564801" >Data visualization in Power Bi</a></li>
-        <li class="certifications"><a href="https://www.credly.com/badges/fc3ade15-bf2c-4627-aa24-77457a43a494/linked_in_profile" >Python Essentials</a></li>
-      </ul>
-    </div>
-  </div>
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+
+        <!-- Hero Section (Combined with introductory bio) -->
+        <section id="hero" class="bg-background p-0 md:p-10 rounded-none md:rounded-2xl flex flex-col md:flex-row gap-10">
+            <div class="md:w-1/3 p-4 md:p-0">
+                <p class="text-lg text-secondary font-medium mb-1">My name is</p>
+                <h2 class="text-5xl sm:text-7xl font-extrabold text-white mb-2 leading-tight">Sanjai Kanna B C</h2>
+                <p class="text-2xl text-gray-400 mb-8">Data Science & Web Developer</p>
+                
+                <h3 class="text-md text-gray-500 font-semibold mb-3 tracking-widest">CHECK OUT MY RESUME</h3>
+                <!-- Download Resume Button (Matching reference style) -->
+                <a href="Sanjai Kanna Resume NGP (1).pdf" download="SanjaiKanna_Resume.pdf" class="inline-block bg-dark_surface text-white font-semibold py-3 px-8 rounded-lg shadow-xl border border-gray-700 hover:border-secondary hover:text-secondary transition duration-300 transform hover:scale-[1.02]">
+                    Grab a copy
+                </a>
+            </div>
+            
+            <div id="about" class="md:w-2/3 p-4 md:p-0 pt-8 border-t md:border-t-0 md:border-l border-gray-800 md:pl-10">
+                <h3 class="text-3xl font-bold text-white mb-4">About</h3>
+                <p class="text-md text-gray-300 mb-4 leading-relaxed">
+                    Motivated computer science student skilled in Python, FastAPI, SQL, and AI-based web development. Experienced in data analytics and automation, with a passion for building efficient, intelligent, and impactful digital solutions.
+                </p>
+                <p class="text-md text-gray-300 mb-8 leading-relaxed">
+                    I possess a strong foundation in computer applications and programming, having completed several courses to enhance my skills and stay updated with the latest technologies in the tech industry. My proficiency in programming languages such as Python, JavaScript, and SQL enables me to develop efficient and scalable solutions. I am eager to contribute my passion for programming and data-driven insights to impactful projects.
+                </p>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section (Reverted to text tags) -->
+        <section class="p-10 rounded-2xl bg-dark_surface shadow-2xl shadow-black/50">
+            <h3 class="text-3xl font-bold text-white section-heading">Technical Skills</h3>
+            <div class="flex flex-wrap gap-3">
+                <!-- Skill Tags - Responsive and styled for dark theme -->
+                <span class="bg-dark_surface border border-secondary text-secondary px-4 py-2 text-sm font-medium rounded-full shadow-md hover:bg-secondary/10 transition duration-300">Python</span>
+                <span class="bg-dark_surface border border-secondary text-secondary px-4 py-2 text-sm font-medium rounded-full shadow-md hover:bg-secondary/10 transition duration-300">HTML</span>
+                <span class="bg-dark_surface border border-secondary text-secondary px-4 py-2 text-sm font-medium rounded-full shadow-md hover:bg-secondary/10 transition duration-300">CSS</span>
+                <span class="bg-dark_surface border border-secondary text-secondary px-4 py-2 text-sm font-medium rounded-full shadow-md hover:bg-secondary/10 transition duration-300">JS</span>
+                <span class="bg-dark_surface border border-secondary text-secondary px-4 py-2 text-sm font-medium rounded-full shadow-md hover:bg-secondary/10 transition duration-300">SQL</span>
+                <span class="bg-dark_surface border border-secondary text-secondary px-4 py-2 text-sm font-medium rounded-full shadow-md hover:bg-secondary/10 transition duration-300">FastAPI</span>
+                <span class="bg-dark_surface border border-secondary text-secondary px-4 py-2 text-sm font-medium rounded-full shadow-md hover:bg-secondary/10 transition duration-300">Spyder</span>
+                <span class="bg-dark_surface border border-secondary text-secondary px-4 py-2 text-sm font-medium rounded-full shadow-md hover:bg-secondary/10 transition duration-300">VS Code</span>
+                <span class="bg-dark_surface border border-secondary text-secondary px-4 py-2 text-sm font-medium rounded-full shadow-md hover:bg-secondary/10 transition duration-300">Postman</span>
+                <span class="bg-dark_surface border border-secondary text-secondary px-4 py-2 text-sm font-medium rounded-full shadow-md hover:bg-secondary/10 transition duration-300">GitHub</span>
+                <span class="bg-dark_surface border border-secondary text-secondary px-4 py-2 text-sm font-medium rounded-full shadow-md hover:bg-secondary/10 transition duration-300">PowerBI</span>
+                <span class="bg-dark_surface border border-secondary text-secondary px-4 py-2 text-sm font-medium rounded-full shadow-md hover:bg-secondary/10 transition duration-300">Excel</span>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="p-10 rounded-2xl bg-dark_surface shadow-2xl shadow-black/50">
+            <h3 class="text-3xl font-bold text-white section-heading">Education</h3>
+            <ul class="space-y-6">
+                <!-- Borders use new secondary color class -->
+                <li class="dark-border-accent pl-4">
+                    <p class="font-bold text-xl text-primary">BS in Data Science and Applications</p>
+                    <p class="text-gray-400">IIT Madras | Expected 2028</p>
+                </li>
+                <li class="dark-border-accent pl-4">
+                    <p class="font-bold text-xl text-primary">B.Com in Computer Applications</p>
+                    <p class="text-gray-400">Loyola College | May 2026 | CGPA: 9.04</p>
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- Projects Section -->
+        <section id="projects" class="p-10 rounded-2xl bg-dark_surface shadow-2xl shadow-black/50">
+            <h3 class="text-3xl font-bold text-white section-heading">Key Projects</h3>
+            <div class="space-y-8">
+                <!-- Project 1 -->
+                <div class="dark-border-accent pl-4">
+                    <h4 class="text-xl font-bold text-primary mb-1" id="project1">AI-Assisted Web Application using FastAPI</h4>
+                    <p class="text-gray-500 italic mb-2">Backend Development & AI Integration</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-400">
+                        <li>Built a backend using FastAPI to handle requests and responses.</li>
+                        <li>Integrated an AI model API to generate automated outputs.</li>
+                        <li>Implemented data validation and error handling for smooth API performance.</li>
+                    </ul>
+                </div>
+                <!-- Project 2 -->
+                <div class="dark-border-accent pl-4">
+                    <h4 class="text-xl font-bold text-primary mb-1" id="project2">Interactive Webpage using HTML, CSS & AI Canvas</h4>
+                    <p class="text-gray-500 italic mb-2">Front-end Development & Visual Design</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-400">
+                        <li>Created a responsive webpage layout using basic HTML and CSS.</li>
+                        <li>Used AI Canvas tools to design and generate visual elements.</li>
+                        <li>Deployed locally and tested browser compatibility.</li>
+                    </ul>
+                </div>
+                <!-- Project 3 -->
+                <div class="dark-border-accent pl-4">
+                    <h4 class="text-xl font-bold text-primary mb-1" id="project3">Data Analytics Automation with Python & SQL</h4>
+                    <p class="text-gray-500 italic mb-2">Data Processing and Visualization</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-400">
+                        <li>Imported and cleaned datasets using Pandas and NumPy.</li>
+                        <li>Used SQL queries for data extraction and filtering.</li>
+                        <li>Built data visualizations in Power BI / Matplotlib to present insights.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="p-10 rounded-2xl bg-dark_surface shadow-2xl shadow-black/50">
+            <h3 class="text-3xl font-bold text-white section-heading">Certifications</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Certification 1: IIT Madras - Direct link to open in new tab -->
+                <div class="bg-dark_surface p-5 rounded-lg shadow-inner border border-gray-700 hover:border-secondary transition duration-300">
+                    <a href="https://drive.google.com/file/d/1JOfqOyUYLjGj3gAl2ByIO3NgMKFLikgj/view" target="_blank" class="text-lg font-bold text-primary hover:text-secondary hover:underline transition duration-300">
+                        Foundational Level in Programming and Datascience
+                    </a>
+                    <p class="text-sm text-gray-500 mt-1">Issued by: IIT Madras</p>
+                </div>
+                <!-- Certification 2: Python Essentials - Direct link to open in new tab -->
+                <div class="bg-dark_surface p-5 rounded-lg shadow-inner border border-gray-700 hover:border-secondary transition duration-300">
+                    <a href="https://www.credly.com/badges/fc3ade15-bf2c-4627-aa24-77457a43a494/linked_in_profile" target="_blank" class="text-lg font-bold text-primary hover:text-secondary hover:underline transition duration-300">
+                        Python Essentials
+                    </a>
+                    <p class="text-sm text-gray-500 mt-1">Issued by: Cisco</p>
+                </div>
+                <!-- Certification 3: Introduction to APIs in Python - LIVE LINK -->
+                <div class="bg-dark_surface p-5 rounded-lg shadow-inner border border-gray-700 hover:border-secondary transition duration-300">
+                    <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/cde1bcfdff206f26f7cd86a77c8c6535881aa989" target="_blank" class="text-lg font-bold text-primary hover:text-secondary hover:underline transition duration-300">
+                        Introduction to APIs in Python
+                    </a>
+                    <p class="text-sm text-gray-500 mt-1">Issued by: Datacamp</p>
+                </div>
+                <!-- Certification 4: Computer Hardware Basics - LIVE LINK -->
+                <div class="bg-dark_surface p-5 rounded-lg shadow-inner border border-gray-700 hover:border-secondary transition duration-300">
+                    <a href="https://www.credly.com/badges/6de356de-8bbb-44b5-85c0-cb0e402315ea/linked_in_profile" target="_blank" class="text-lg font-bold text-primary hover:text-secondary hover:underline transition duration-300">
+                        Computer Hardware Basics
+                    </a>
+                    <p class="text-sm text-gray-500 mt-1">Issued by: Cisco</p>
+                </div>
+                <!-- Certification 5: Data Visualisation in PowerBI - LIVE LINK -->
+                <div class="bg-dark_surface p-5 rounded-lg shadow-inner border border-gray-700 hover:border-secondary transition duration-300">
+                    <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/081b7a9350f18cebfe2ec075b7d52602a2564801" target="_blank" class="text-lg font-bold text-primary hover:text-secondary hover:underline transition duration-300">
+                        Data Visualisation in PowerBI
+                    </a>
+                    <p class="text-sm text-gray-500 mt-1">Issued by: Datacamp</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="p-10 rounded-2xl bg-dark_surface shadow-2xl shadow-black/50">
+            <h3 class="text-3xl font-bold text-white section-heading">Experience</h3>
+            <div class="space-y-6">
+                <!-- Experience 1 -->
+                <div class="dark-border-accent pl-4">
+                    <div class="flex justify-between items-start">
+                        <h4 class="text-xl font-bold text-primary">Equity Research & Operations Intern</h4>
+                        <span class="text-sm text-gray-500">May 2025</span>
+                    </div>
+                    <p class="text-lg italic text-gray-400">Absolute Broking Pvt. Ltd.</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-400 mt-2">
+                        <li>Reviewed company financials and verified data consistency across reports.</li>
+                        <li>Assisted in preparing compliance documents and KYC records.</li>
+                        <li>Supported financial reporting and operational audit processes.</li>
+                    </ul>
+                </div>
+                <!-- Experience 2 -->
+                <div class="dark-border-accent pl-4">
+                    <div class="flex justify-between items-start">
+                        <h4 class="text-xl font-bold text-primary">Data Operations & Analysis Intern</h4>
+                        <span class="text-sm text-gray-500">May 2024</span>
+                    </div>
+                    <p class="text-lg italic text-gray-400">Antontech Pvt. Ltd.</p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-400 mt-2">
+                        <li>Built Power BI dashboards to track key financial metrics and internal controls.</li>
+                        <li>Validated invoices and reconciled data to ensure accuracy and transparency.</li>
+                        <li>Collaborated with finance teams to streamline reporting and documentation.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="p-10 rounded-2xl bg-dark_surface shadow-2xl shadow-black/50">
+            <h3 class="text-3xl font-bold text-white section-heading">Contact & Links</h3>
+            <div class="grid md:grid-cols-2 gap-4 text-lg">
+                <p><strong>Email:</strong> <a href="mailto:sanjaikannabc26@gmail.com" class="text-secondary hover:text-primary hover:underline transition duration-200">sanjaikannabc26@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+918072417190" class="text-secondary hover:text-primary hover:underline transition duration-200">+91 8072417190</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/sanjaikannabc" target="_blank" class="text-secondary hover:text-primary hover:underline transition duration-200">linkedin.com/in/sanjaikannabc</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/SanjaiKannaBC" target="_blank" class="text-secondary hover:text-primary hover:underline transition duration-200">github.com/SanjaiKannaBC</a></p>
+            </div>
+        </section>
+
+    </main>
+    
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
